@@ -1,0 +1,42 @@
+﻿@model Website.Entity.Resim
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<h4>Resim Ekle</h4>
+<hr />
+<div class="row">
+    <div class="col-md-5">
+        <form asp-action="Create" method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Adi" class="control-label"></label>
+                <input asp-for="Adi" class="form-control" required />
+                <span asp-validation-for="Adi" class="text-danger"></span>
+            </div>
+            <div class="form-group row">
+                <img src="~/FlatLab/assets/jquery-file-upload/img/loading.gif" id="loader" style="display:none" />
+
+
+
+                <label asp-for="ResimYolu" class="col-sm-3 control-label" style="padding-top:6px; padding-right:7px">Resim Yolu :</label>
+
+                <div class="fileupload fileupload-new col-md-7" data-provides="fileupload">
+                    <div>
+                        <span class="btn btn-white btn-file">
+                            <input asp-for="ResimYolu" type="file" id="file" name="file" multiple class="default" required>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Ekle" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="List">Back to List</a>
+</div>

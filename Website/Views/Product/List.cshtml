@@ -1,0 +1,79 @@
+﻿@model IQueryable<Urun>
+
+    @{
+        ViewData["Title"] = "Ürün Listesi";
+        Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    }
+
+
+
+    <div class="row">
+        <div class="col-lg-12">
+            <section class="panel">
+                <header class="panel-heading">
+                    Ürün Listesi
+                </header>
+                <div class="panel-body">
+                    <div class="adv-table">
+                        <table class="display table table-bordered table-striped" id="example">
+                            <thead>
+                                <tr>
+                                    <th>Görsel</th>
+                                    <th>Sıra No</th>
+                                    <th>Ürün Adı</th>
+                                    <th>Ürün Kodu</th>
+                                    <th>Palet İç Adedi</th>
+                                    <th>Palet Sıra Sayısı</th>
+                                    <th>Palet Yüksekliği</th>
+                                    <th>Palet Ağırlığı</th>
+                                    <th>Palet Çapı</th>
+                                    <th>Ürün Grubu</th>
+                                    <th>Dil</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                <tr class="gradeX">
+                                    <td><div class="pro-img-box"><img src="~/Img/UrunGorsel/@item.OneCikanGorsel" width="80" /></div></td>
+                                    <td>@item.SiraNo</td>
+                                    <td>@item.Adi</td>
+                                    <td>@item.Kodu</td>
+                                    <td>@item.PaletIcAdedi</td>
+                                    <td>@item.PaletSiraSayisi</td>
+                                    <td>@item.PaletYuksekligi</td>
+                                    <td>@item.PaletAgirligi</td>
+                                    <td>@item.Capi</td>
+                                    <td>@item.UrunGrupId</td>
+                                    <td>@item.Dil</td>
+                                    <td>
+                                        <a asp-controller="Product" asp-action="Update" asp-route-id="@item.Id" class="btn btn-primary btn-xs"><i class="icon-pencil"></i></a>
+                                        <a asp-controller="Product" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-xs"><i class="icon-remove"></i></a>
+                                    </td>
+                                </tr>
+                                }
+
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th>Görsel</th>
+                                    <th>Sıra No</th>
+                                    <th>Ürün Adı</th>
+                                    <th>Ürün Kodu</th>
+                                    <th>Palet İç Adedi</th>
+                                    <th>Palet Sıra Sayısı</th>
+                                    <th>Palet Yüksekliği</th>
+                                    <th>Palet Ağırlığı</th>
+                                    <th>Palet Çapı</th>
+                                    <th>Ürün Grubu</th>
+                                    <th>Dil</th>
+                                    <th></th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>

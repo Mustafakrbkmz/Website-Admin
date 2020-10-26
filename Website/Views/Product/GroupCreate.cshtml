@@ -1,0 +1,39 @@
+﻿@model Website.Entity.UrunGrup
+
+@{
+    ViewData["Title"] = "GroupCreate";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Ürün Grup Ekle</h2>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="GroupCreate" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Adi" class="control-label"></label>
+                <input asp-for="Adi" class="form-control" />
+                <span asp-validation-for="Adi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Aciklama" class="control-label"></label>
+                <input asp-for="Aciklama" class="form-control" />
+                <span asp-validation-for="Aciklama" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dil" class="control-label"></label>
+                <input asp-for="Dil" class="form-control" />
+                <span asp-validation-for="Dil" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Oluştur" class="btn btn-success" /> | 
+                <button class="btn btn-warning"><a asp-action="GroupList">Vazgeç</a></button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+

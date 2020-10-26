@@ -1,0 +1,87 @@
+﻿@model IQueryable<Ayar>
+@{
+    ViewData["Title"] = "List";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<div class="row">
+    <div class="col-lg-12">
+        <section class="panel">
+            <header class="panel-heading">
+                Ayarlar
+            </header>
+            <div class="panel-body">
+                <div class="adv-table">
+                    <table class="display table table-bordered table-striped" id="example">
+                        <thead>
+                            <tr>
+                                <th>Fabrika Adresi</th>
+                                <th>Ofis Adresi</th>
+                                <th>E Posta</th>
+                                <th>Telefon</th>
+                                <th>Twitter</th>
+                                <th>Instagram</th>
+                                <th>Youtube</th>
+                                <th>Linkedin</th>
+                                <th>Site Logo</th>
+                                <th>Site Başlığı</th>
+                                <th>Site Sloganı</th>
+                                <th>Site Açıklaması</th>
+                                <th>Site Etiket</th>
+                                <th>SiteUrl</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                            <tr class="gradeX">
+                                <td>@item.FabrikaAdres</td>
+                                <td>@item.OfisAdres</td>
+                                <td>@item.Eposta</td>
+                                <td>@item.Telefon</td>
+                                <td>@item.Twitter</td>
+                                <td>@item.Instagram</td>
+                                <td>@item.Youtube</td>
+                                <td>@item.Linkedin</td>
+                                <td>@item.SiteLogo</td>
+                                <td>@item.SiteBaslik</td>
+                                <td>@item.SiteSlogan</td>
+                                <td>@item.SiteAciklama</td>
+                                <td>@item.SiteEtiket</td>
+                                <td>@item.SiteUrl</td>
+
+                                <td>
+                                    <a asp-controller="Settings" asp-action="Update" asp-route-id="@item.Id" class="btn btn-primary btn-xs"><i class="icon-pencil"></i></a>
+                                    <a asp-controller="Settings" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-xs"><i class="icon-remove"></i></a>
+                                </td>
+                            </tr>
+                            }
+
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>Fabrika Adresi</th>
+                                <th>Ofis Adresi</th>
+                                <th>E Posta</th>
+                                <th>Telefon</th>
+                                <th>Twitter</th>
+                                <th>Instagram</th>
+                                <th>Youtube</th>
+                                <th>Linkedin</th>
+                                <th>Site Logo</th>
+                                <th>Site Başlığı</th>
+                                <th>Site Sloganı</th>
+                                <th>Site Açıklaması</th>
+                                <th>Site Etiket</th>
+                                <th>SiteUrl</th>
+                                <th></th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

@@ -1,0 +1,66 @@
+﻿@model IEnumerable<Blog>
+
+@{
+    ViewData["Title"] = "Blog Listesi";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<div class="row">
+    <div class="col-lg-12">
+        <section class="panel">
+            <header class="panel-heading">
+                Blog Listesi
+            </header>
+            <div class="panel-body">
+                <div class="adv-table">
+                    <table class="display table table-bordered table-striped" id="example">
+                        <thead>
+                            <tr>
+                                <th>Başlık</th>
+                                <th>İçerik</th>
+                                <th>Yazar</th>
+                                <th>Dil</th>
+                                <th>Oluşturulma Tarihi</th>
+                                <th>Kategori</th>
+                                <th>Etiketler</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr class="gradeX">
+                                    <td>@item.Baslik</td>
+                                    <td>@item.Icerik</td>
+                                    <td>@item.Yazar</td>
+                                    <td>@item.Dil</td>
+                                    <td>@item.OlusturulmaTarihi</td>
+                                    <td>@item.KategoriId</td>
+                                    <td>@item.Etiketler</td>
+                                    <td>
+                                        <a asp-controller="Blog" asp-action="Update" asp-route-id="@item.Id" class="btn btn-primary btn-xs"><i class="icon-pencil"></i></a>
+                                        <a asp-controller="Blog" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-xs"><i class="icon-remove"></i></a>
+                                    </td>
+                                </tr>
+                            }
+
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>Başlık</th>
+                                <th>İçerik</th>
+                                <th>Yazar</th>
+                                <th>Dil</th>
+                                <th>Oluşturulma Tarihi</th>
+                                <th>Kategori</th>
+                                <th>Etiketler</th>
+                                <th></th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

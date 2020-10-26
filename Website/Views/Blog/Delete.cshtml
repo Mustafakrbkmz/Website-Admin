@@ -1,0 +1,33 @@
+﻿@model Blog
+@{
+    ViewData["Title"] = "Sil";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+    <h3>Seçili blogu silmek istediğinize emin misiniz?</h3>
+    <div>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Baslik):
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Baslik)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Icerik):
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Icerik)
+            </dd>
+        </dl>
+
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="Id" />
+            <input type="submit" value="Sil" class="btn btn-default" /> |
+            <a asp-controller="Blog" asp-action="List">Listeye geri dön.</a>
+        </form>
+    </div>
+

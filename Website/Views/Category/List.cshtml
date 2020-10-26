@@ -1,0 +1,51 @@
+﻿@model IQueryable<Kategori>
+@{
+    ViewData["Title"] = "Kategori Listesi";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<div class="row">
+    <div class="col-lg-12">
+        <section class="panel">
+            <header class="panel-heading">
+                Kategori Listesi
+            </header>
+            <div class="panel-body">
+                <div class="adv-table">
+                    <table class="display table table-bordered table-striped" id="example">
+                        <thead>
+                            <tr>
+                                <th>Adı</th>
+                                <th>Dil</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr class="gradeX">
+                                    <td>@item.Adi</td>
+                                    <td>@item.Dil</td>
+
+                                    <td>
+                                        <a asp-controller="Category" asp-action="Update" asp-route-id="@item.Id" class="btn btn-primary btn-xs"><i class="icon-pencil"></i></a>
+                                        <a asp-controller="Category" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-xs"><i class="icon-remove"></i></a>
+                                    </td>
+                                </tr>
+                            }
+
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>Adı</th>
+                                <th>Dil</th>
+                                <th></th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

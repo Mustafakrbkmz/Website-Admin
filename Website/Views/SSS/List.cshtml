@@ -1,0 +1,57 @@
+﻿@model IQueryable<SSS>
+@{
+    ViewData["Title"] = "List";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<div class="row">
+    <div class="col-lg-12">
+        <section class="panel">
+            <header class="panel-heading">
+                Sıkça Sorular Sorular Listesi
+            </header>
+            <div class="panel-body">
+                <div class="adv-table">
+                    <table class="display table table-bordered table-striped" id="example">
+                        <thead>
+                            <tr>
+                                <th>Soru</th>
+                                <th>Cevap</th>
+                                <th>Dil</th>
+                                <th>Oluşturulma Tarihi</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr class="gradeX">
+                                    <td>@item.Soru</td>
+                                    <td>@item.Cevap</td>
+                                    <td>@item.Dil</td>
+                                    <td>@item.OlusturulmaTarihi</td>
+
+                                    <td>
+                                        <a asp-controller="SSS" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-xs"><i class="icon-remove"></i></a>
+                                    </td>
+                                </tr>
+                            }
+
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>Soru</th>
+                                <th>Cevap</th>
+                                <th>Dil</th>
+                                <th>Oluşturulma Tarihi</th>
+                                <th></th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+

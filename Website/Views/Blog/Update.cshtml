@@ -1,0 +1,63 @@
+﻿@model BlogUpdateViewModel
+@{
+    ViewData["Title"] = "Update";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+@section scripts{
+    <script src="~/lib/ckeditor/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace("Blog.Icerik");
+    </script>
+}
+<h3>Blog Güncelle</h3>
+<br />
+<form asp-controller="Blog" asp-action="Update" method="post" enctype="multipart/form-data">
+    <input type="hidden" asp-for="Blog.Id" />
+
+
+
+    <div class="form-group row">
+        <label asp-for="Blog.OneCikanGorsel" class="col-sm-1 control-label" style="padding-top:6px; padding-right:7px">Öne Çıkan Görsel :</label>
+
+        <div class="fileupload fileupload-new col-md-6" data-provides="fileupload">
+            <div>
+                <span class="btn btn-white btn-file">
+                    <input asp-for="Blog.OneCikanGorsel" type="file" id="img" name="img" class="default">
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Blog.KategoriId" class="col-sm-1 control-label" style="padding-top:6px; padding-right:7px"> Kategori :</label>
+        <div class="col-md-2">
+            <select class="form-control" asp-for="Blog.KategoriId" asp-items="ViewBag.BlogKategoriler">
+                <option selected value="">Kategori Seç</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Blog.Dil" class="col-md-1 control-label" style="padding-top:6px">Dil :</label>
+        <div class="col-md-5">
+            <input asp-for="Blog.Dil" type="text" class="form-control">
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label asp-for="Blog.Baslik" class="col-md-1 control-label" style="padding-top:6px">Başlık   :</label>
+        <div class="col-md-5">
+            <input asp-for="Blog.Baslik" type="text" class="form-control">
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label asp-for="Blog.Icerik" class="col-md-1 control-label" style="padding-top:6px">İçerik :</label>
+        <div class="col-md-10">
+            <textarea asp-for="Blog.Icerik" class="form-control"></textarea>
+        </div>
+    </div>
+
+    <input type="submit" class="btn btn-info" value="Güncelle" />
+
+
+</form>
+

@@ -1,0 +1,45 @@
+﻿@model UrunGrup
+
+@{
+    ViewData["Title"] = "GroupUpdate";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Güncelleme İşlemi</h2>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="GroupUpdate" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Adi" class="control-label"></label>
+                <input asp-for="Adi" class="form-control" />
+                <span asp-validation-for="Adi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Aciklama" class="control-label"></label>
+                <input asp-for="Aciklama" class="form-control" />
+                <span asp-validation-for="Aciklama" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Dil" class="control-label"></label>
+                <input asp-for="Dil" class="form-control" />
+                <span asp-validation-for="Dil" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" /> | 
+                <button class="btn btn-warning"><a asp-action="GroupList">Vazgeç</a></button>
+            </div>
+            <div>
+                
+            </div>
+        </form> 
+    </div>
+  
+</div>
+
+
+<div>
+</div>
+

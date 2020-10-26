@@ -1,0 +1,34 @@
+﻿@model SSS
+@{
+    ViewData["Title"] = "Ekle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h3>Sıkca Sorulan Soru Ekleme</h3>
+<br />
+<form asp-controller="SSS" asp-action="Create" method="post">
+
+    <div class="form-group row">
+        <label asp-for="Soru" class="col-md-1 control-label" style="padding-top:6px">Başlık   :</label>
+        <div class="col-md-2">
+            <input asp-for="Soru" type="text" class="form-control">
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label asp-for="Cevap" class="col-md-1 control-label" style="padding-top:6px">İçerik :</label>
+        <div class="col-md-5">
+            <input asp-for="Cevap" type="text" class="form-control">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Dil" class="col-md-1 control-label" style="padding-top:6px">Dil :</label>
+        <div class="col-md-5">
+            <input asp-for="Dil" type="text" class="form-control">
+        </div>
+    </div>
+
+    <input type="submit" class="btn btn-info" value="Kaydet" />
+
+</form>
+

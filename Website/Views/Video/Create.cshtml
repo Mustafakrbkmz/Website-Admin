@@ -1,0 +1,27 @@
+﻿@model Video
+@{
+    ViewData["Title"] = "Video Ekle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h3>Video Ekleme</h3>
+<br />
+<form asp-controller="Video" asp-action="Create" method="post">
+
+    <div class="form-group row">
+        <label asp-for="Adi" class="col-md-1 control-label" style="padding-top:6px">Adı   :</label>
+        <div class="col-md-5">
+            <input asp-for="Adi" type="text" class="form-control">
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label asp-for="Link" class="col-md-1 control-label" style="padding-top:6px">Link :</label>
+        <div class="col-md-5">
+            <input asp-for="Link" type="text" class="form-control">
+        </div>
+    </div>
+
+    <input type="submit" class="btn btn-info" value="Kaydet" />
+
+</form>

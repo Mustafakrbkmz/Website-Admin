@@ -1,0 +1,50 @@
+D:\Visual Studio Project\BasturkcamSite\BasturkcamSite\BasturkcamSite\bin\Debug\netcoreapp2.0\appsettings.Development.json
+D:\Visual Studio Project\BasturkcamSite\BasturkcamSite\BasturkcamSite\bin\Debug\netcoreapp2.0\appsettings.json
+D:\Visual Studio Project\BasturkcamSite\BasturkcamSite\BasturkcamSite\bin\Debug\netcoreapp2.0\bundleconfig.json
+D:\Visual Studio Project\BasturkcamSite\BasturkcamSite\BasturkcamSite\bin\Debug\netcoreapp2.0\Properties\launchSettings.json
+D:\Visual Studio Project\BasturkcamSite\BasturkcamSite\BasturkcamSite\bin\Debug\netcoreapp2.0\BasturkcamSite.deps.json
+D:\Visual Studio Project\BasturkcamSite\BasturkcamSite\BasturkcamSite\bin\Debug\netcoreapp2.0\BasturkcamSite.runtimeconfig.json
+D:\Visual Studio Project\BasturkcamSite\BasturkcamSite\BasturkcamSite\bin\Debug\netcoreapp2.0\BasturkcamSite.runtimeconfig.dev.json
+D:\Visual Studio Project\BasturkcamSite\BasturkcamSite\BasturkcamSite\bin\Debug\netcoreapp2.0\BasturkcamSite.dll
+D:\Visual Studio Project\BasturkcamSite\BasturkcamSite\BasturkcamSite\bin\Debug\netcoreapp2.0\BasturkcamSite.pdb
+D:\Visual Studio Project\BasturkcamSite\BasturkcamSite\BasturkcamSite\obj\Debug\netcoreapp2.0\BasturkcamSite.AssemblyInfoInputs.cache
+D:\Visual Studio Project\BasturkcamSite\BasturkcamSite\BasturkcamSite\obj\Debug\netcoreapp2.0\BasturkcamSite.AssemblyInfo.cs
+D:\Visual Studio Project\BasturkcamSite\BasturkcamSite\BasturkcamSite\obj\Debug\netcoreapp2.0\BasturkcamSite.dll
+D:\Visual Studio Project\BasturkcamSite\BasturkcamSite\BasturkcamSite\obj\Debug\netcoreapp2.0\BasturkcamSite.pdb
+D:\Visual Studio Project\BasturkcamSite\BasturkcamSite\BasturkcamSite\obj\Debug\netcoreapp2.0\BasturkcamSite.genruntimeconfig.cache
+D:\Visual Studio Project\BasturkcamSite\BasturkcamSite\BasturkcamSite\obj\Debug\netcoreapp2.0\BasturkcamSite.csprojAssemblyReference.cache
+D:\Visual Studio Project\BasturkcamSite\BasturkcamSite\BasturkcamSite\obj\Debug\netcoreapp2.0\BasturkcamSite.csproj.CoreCompileInputs.cache
+D:\Projeler\BasturkcamSite\BasturkcamSite\BasturkcamSite\bin\Debug\netcoreapp2.0\appsettings.Development.json
+D:\Projeler\BasturkcamSite\BasturkcamSite\BasturkcamSite\bin\Debug\netcoreapp2.0\appsettings.json
+D:\Projeler\BasturkcamSite\BasturkcamSite\BasturkcamSite\bin\Debug\netcoreapp2.0\bundleconfig.json
+D:\Projeler\BasturkcamSite\BasturkcamSite\BasturkcamSite\bin\Debug\netcoreapp2.0\Properties\launchSettings.json
+D:\Projeler\BasturkcamSite\BasturkcamSite\BasturkcamSite\bin\Debug\netcoreapp2.0\BasturkcamSite.deps.json
+D:\Projeler\BasturkcamSite\BasturkcamSite\BasturkcamSite\bin\Debug\netcoreapp2.0\BasturkcamSite.runtimeconfig.json
+D:\Projeler\BasturkcamSite\BasturkcamSite\BasturkcamSite\bin\Debug\netcoreapp2.0\BasturkcamSite.runtimeconfig.dev.json
+D:\Projeler\BasturkcamSite\BasturkcamSite\BasturkcamSite\bin\Debug\netcoreapp2.0\BasturkcamSite.dll
+D:\Projeler\BasturkcamSite\BasturkcamSite\BasturkcamSite\bin\Debug\netcoreapp2.0\BasturkcamSite.pdb
+D:\Projeler\BasturkcamSite\BasturkcamSite\BasturkcamSite\obj\Debug\netcoreapp2.0\BasturkcamSite.AssemblyInfoInputs.cache
+D:\Projeler\BasturkcamSite\BasturkcamSite\BasturkcamSite\obj\Debug\netcoreapp2.0\BasturkcamSite.AssemblyInfo.cs
+D:\Projeler\BasturkcamSite\BasturkcamSite\BasturkcamSite\obj\Debug\netcoreapp2.0\BasturkcamSite.csproj.CoreCompileInputs.cache
+D:\Projeler\BasturkcamSite\BasturkcamSite\BasturkcamSite\obj\Debug\netcoreapp2.0\BasturkcamSite.dll
+D:\Projeler\BasturkcamSite\BasturkcamSite\BasturkcamSite\obj\Debug\netcoreapp2.0\BasturkcamSite.pdb
+D:\Projeler\BasturkcamSite\BasturkcamSite\BasturkcamSite\obj\Debug\netcoreapp2.0\BasturkcamSite.genruntimeconfig.cache
+D:\Projeler\BasturkcamSite\BasturkcamSite\BasturkcamSite\obj\Debug\netcoreapp2.0\BasturkcamSite.csprojAssemblyReference.cache
+D:\Projeler\BasturkcamSite\BasturkcamSite\BasturkcamSite\bin\Debug\netcoreapp2.0\bower.json
+D:\Projeler\WebSite-Admin\WebSite\BasturkcamSite\bin\Debug\netcoreapp2.0\appsettings.Development.json
+D:\Projeler\WebSite-Admin\WebSite\BasturkcamSite\bin\Debug\netcoreapp2.0\appsettings.json
+D:\Projeler\WebSite-Admin\WebSite\BasturkcamSite\bin\Debug\netcoreapp2.0\bower.json
+D:\Projeler\WebSite-Admin\WebSite\BasturkcamSite\bin\Debug\netcoreapp2.0\bundleconfig.json
+D:\Projeler\WebSite-Admin\WebSite\BasturkcamSite\bin\Debug\netcoreapp2.0\Properties\launchSettings.json
+D:\Projeler\WebSite-Admin\WebSite\BasturkcamSite\bin\Debug\netcoreapp2.0\BasturkcamSite.deps.json
+D:\Projeler\WebSite-Admin\WebSite\BasturkcamSite\bin\Debug\netcoreapp2.0\BasturkcamSite.runtimeconfig.json
+D:\Projeler\WebSite-Admin\WebSite\BasturkcamSite\bin\Debug\netcoreapp2.0\BasturkcamSite.runtimeconfig.dev.json
+D:\Projeler\WebSite-Admin\WebSite\BasturkcamSite\bin\Debug\netcoreapp2.0\BasturkcamSite.dll
+D:\Projeler\WebSite-Admin\WebSite\BasturkcamSite\bin\Debug\netcoreapp2.0\BasturkcamSite.pdb
+D:\Projeler\WebSite-Admin\WebSite\BasturkcamSite\obj\Debug\netcoreapp2.0\BasturkcamSite.csprojAssemblyReference.cache
+D:\Projeler\WebSite-Admin\WebSite\BasturkcamSite\obj\Debug\netcoreapp2.0\BasturkcamSite.AssemblyInfoInputs.cache
+D:\Projeler\WebSite-Admin\WebSite\BasturkcamSite\obj\Debug\netcoreapp2.0\BasturkcamSite.AssemblyInfo.cs
+D:\Projeler\WebSite-Admin\WebSite\BasturkcamSite\obj\Debug\netcoreapp2.0\BasturkcamSite.csproj.CoreCompileInputs.cache
+D:\Projeler\WebSite-Admin\WebSite\BasturkcamSite\obj\Debug\netcoreapp2.0\BasturkcamSite.dll
+D:\Projeler\WebSite-Admin\WebSite\BasturkcamSite\obj\Debug\netcoreapp2.0\BasturkcamSite.pdb
+D:\Projeler\WebSite-Admin\WebSite\BasturkcamSite\obj\Debug\netcoreapp2.0\BasturkcamSite.genruntimeconfig.cache

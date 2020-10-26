@@ -1,0 +1,191 @@
+﻿@model Urun
+@{
+    ViewData["Title"] = "Ürün Ekle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<h3>Ürün Ekle</h3>
+<br />
+<form asp-controller="Product" asp-action="Create" method="post" enctype="multipart/form-data">
+
+
+
+    <div class="form-group row">
+        <label asp-for="SiraNo" class="col-md-1 control-label" style="padding-top:6px">Sıra No :</label>
+        <div class="col-md-2">
+            <input asp-for="SiraNo" type="number" class="form-control">
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label asp-for="Adi" class="col-md-1 control-label" style="padding-top:6px">Ürün Adı :</label>
+        <div class="col-md-5">
+            <input asp-for="Adi" type="text" class="form-control" required>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label asp-for="Kodu" class="col-md-1 control-label" style="padding-top:6px">Ürün Kodu :</label>
+        <div class="col-md-5">
+            <input asp-for="Kodu" type="text" class="form-control" required>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label asp-for="DolumHacimi" class="col-sm-1 control-label" style="padding-top:6px;padding-right:7px">Dolum Hacmi :</label>
+        <div class="col-md-2">
+            <input asp-for="DolumHacimi" type="number" class="form-control">
+        </div>
+    </div>
+
+
+
+
+    <div class="form-group row">
+        <label asp-for="SilmeHacimi" class="col-sm-1 control-label" style="padding-top:6px; padding-right:7px">Silme Hacmi :</label>
+        <div class="col-md-2">
+            <input asp-for="SilmeHacimi" type="number" class="form-control">
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label asp-for="Boyu" class="col-sm-1 control-label" style="padding-top:6px; padding-right:7px">Ürün Boyu :</label>
+        <div class="col-md-2">
+            <input asp-for="Boyu" type="number" class="form-control">
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label asp-for="Capi" class="col-sm-1 control-label" style="padding-top:6px; padding-right:7px">Ürün Çapı :</label>
+        <div class="col-md-2">
+            <input asp-for="Capi" type="number" class="form-control">
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label asp-for="Agirligi" class="col-sm-1 control-label" style="padding-top:6px; padding-right:7px">Ürün Ağırlığı :</label>
+        <div class="col-md-2">
+            <input asp-for="Agirligi" type="number" class="form-control">
+        </div>
+    </div>
+
+
+    <div class="form-group row">
+        <label asp-for="KafaTipi" class="col-md-1 control-label" style="padding-top:6px">Kafa Tipi :</label>
+        <div class="col-md-5">
+            <input asp-for="KafaTipi" type="text" class="form-control">
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label asp-for="PaletSiraSayisi" class="col-sm-1 control-label" style="padding-top:6px; padding-right:7px">Kat Sayısı :</label>
+        <div class="col-md-2">
+            <input asp-for="PaletSiraSayisi" type="number" class="form-control">
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label asp-for="TavaUrunAdedi" class="col-sm-1 control-label" style="padding-top:6px; padding-right:7px">Tavadaki Ürün Sayısı :</label>
+        <div class="col-md-2">
+            <input asp-for="TavaUrunAdedi" type="number" class="form-control">
+        </div>
+    </div>
+
+
+    <div class="form-group row">
+        <label asp-for="PaletIcAdedi" class="col-sm-1 control-label" style="padding-top:6px; padding-right:7px">Palet İç Adedi :</label>
+        <div class="col-md-2">
+            <input asp-for="PaletIcAdedi" type="number" class="form-control">
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label asp-for="PaletYuksekligi" class="col-sm-1 control-label" style="padding-top:6px; padding-right:7px">Palet Yüksekliği :</label>
+        <div class="col-md-2">
+            <input asp-for="PaletYuksekligi" type="number" class="form-control">
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label asp-for="PaletAgirligi" class="col-sm-1 control-label" style="padding-top:6px; padding-right:7px">Palet Ağırlığı :</label>
+        <div class="col-md-2">
+            <input asp-for="PaletAgirligi" type="number" class="form-control">
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label asp-for="Aciklama" class="col-sm-1 control-label" style="padding-top:6px; padding-right:7px">Açıklama :</label>
+        <div class="col-md-6">
+            <input asp-for="Aciklama" type="text" class="form-control">
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label asp-for="Dil" class="col-sm-1 control-label" style="padding-top:6px; padding-right:7px">Dil :</label>
+        <div class="col-md-2">
+            <input asp-for="Dil" type="text" class="form-control" placeholder="tr-TR" required>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="UrunGrupId" class="col-sm-1 control-label" style="padding-top:6px; padding-right:7px"> Ürün Grubu :</label>
+        <div class="col-md-2">
+            <select class="form-control" asp-for="UrunGrupId" asp-items="ViewBag.UrunGruplar" required>
+
+                <option disabled selected value="">Ürün Grubu Seç</option>
+            </select>
+        </div>
+    </div>
+
+
+    <div class="form-group row">
+        <label asp-for="Brosur" class="col-sm-1 control-label" style="padding-top:6px; padding-right:7px">Broşür :</label>
+
+        <div class="fileupload fileupload-new col-md-6" data-provides="fileupload">
+            <div>
+                <span class="btn btn-white btn-file">
+                    <input asp-for="Brosur" type="file" id="file" name="file" class="default">
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="form-group row">
+        <label asp-for="OneCikanGorsel" class="col-sm-1 control-label" style="padding-top:6px; padding-right:7px">Öne Çıkan Görsel :</label>
+
+        <div class="fileupload fileupload-new col-md-6" data-provides="fileupload">
+            <div>
+                <span class="btn btn-white btn-file">
+                    <input asp-for="OneCikanGorsel" type="file" id="file2" name="file2" class="default">
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="form-group last">
+        <label class="control-label col-md-3">Image Upload</label>
+        <div class="col-md-9">
+            <div class="fileupload fileupload-new" data-provides="fileupload">
+                <div class="fileupload-new thumbnail" style="width: 200px; height: 150px;">
+                    <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt="">
+                </div>
+                <div class="fileupload-preview fileupload-exists thumbnail" style="max-width: 200px; max-height: 150px; line-height: 20px;"></div>
+                <div>
+                    <span class="btn btn-white btn-file">
+                        <span class="fileupload-new"><i class="icon-paper-clip"></i> Select image</span>
+                        <span class="fileupload-exists"><i class="icon-undo"></i> Change</span>
+                        <input type="file" id="files" name="files" class="default">
+                    </span>
+                    <a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload"><i class="icon-trash"></i> Remove</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <input type="submit" class="btn btn-info" value="Kaydet" />
+
+
+</form>
+

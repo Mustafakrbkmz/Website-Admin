@@ -1,0 +1,29 @@
+﻿@model IQueryable<Slider>
+@{
+    ViewData["Title"] = "List";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<section class="panel">
+    <header class="panel-heading">
+        Slider Galeri
+    </header>
+    @foreach (var item in Model)
+    {
+        <div class="panel-body">
+            <ul class="grid cs-style-3">
+                <li>
+                    <figure>
+                        <img src="img/gallery/4.jpg" alt="img04">
+                        <figcaption>
+                            <h3>Mindblowing</h3>
+                            <span>lorem ipsume </span>
+                            <a class="fancybox" rel="group" href="~/Img/Galeri/@item.Resim">Take a look</a>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+
+        </div>
+    }
+
+</section>

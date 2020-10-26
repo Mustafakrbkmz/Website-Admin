@@ -1,0 +1,99 @@
+﻿@model Ayar
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h3>Ayar Ekle</h3>
+<br />
+<form asp-controller="Settings" asp-action="Create" method="post">
+
+    <div class="form-group row">
+        <label asp-for="FabrikaAdres" class="col-md-2 control-label" style="padding-top:6px; text-align:right">Fabrika Adresi   :</label>
+        <div class="col-md-5">
+            <input asp-for="FabrikaAdres" type="text" class="form-control">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="OfisAdres" class="col-md-2 control-label" style="padding-top:6px; text-align:right">Ofis Adresi :</label>
+        <div class="col-md-5">
+            <input asp-for="OfisAdres" type="text" class="form-control">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Eposta" class="col-md-2 control-label" style="padding-top:6px; text-align:right">E Posta :</label>
+        <div class="col-md-5">
+            <input asp-for="Eposta" type="email" class="form-control">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Telefon" class="col-md-2 control-label" style="padding-top:6px; text-align:right">Telefon :</label>
+        <div class="col-md-5">
+            <input asp-for="Telefon" type="tel" class="form-control">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Twitter" class="col-md-2 control-label" style="padding-top:6px; text-align:right">Twitter :</label>
+        <div class="col-md-5">
+            <input asp-for="Twitter" type="text" class="form-control">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Instagram" class="col-md-2 control-label" style="padding-top:6px; text-align:right">Instagram :</label>
+        <div class="col-md-5">
+            <input asp-for="Instagram" type="text" class="form-control">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Youtube" class="col-md-2 control-label" style="padding-top:6px; text-align:right">Youtube :</label>
+        <div class="col-md-5">
+            <input asp-for="Youtube" type="text" class="form-control">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Linkedin" class="col-md-2 control-label" style="padding-top:6px; text-align:right">Linkedin :</label>
+        <div class="col-md-5">
+            <input asp-for="Linkedin" type="text" class="form-control">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="SiteLogo" class="col-md-2 control-label" style="padding-top:6px; text-align:right">Site Logo :</label>
+        <div class="col-md-5">
+            <input asp-for="SiteLogo" type="text" class="form-control">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="SiteBaslik" class="col-md-2 control-label" style="padding-top:6px; text-align:right">Site Başlığı :</label>
+        <div class="col-md-5">
+            <input asp-for="SiteBaslik" type="text" class="form-control">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="SiteSlogan" class="col-md-2 control-label" style="padding-top: 6px; text-align:right ">Site Sloganı :</label>
+        <div class="col-md-5">
+            <input asp-for="SiteSlogan" type="text" class="form-control">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="SiteAciklama" class="col-md-2 control-label" style="padding-top:6px; text-align:right">Site Açıklaması :</label>
+        <div class="col-md-5">
+            <input asp-for="SiteAciklama" type="text" class="form-control">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="SiteEtiket" class="col-md-2 control-label" style="padding-top:6px; text-align:right">Site Etiket :</label>
+        <div class="col-md-5">
+            <input asp-for="SiteEtiket" type="text" class="form-control">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="SiteUrl" class="col-md-2 control-label" style="padding-top: 6px; text-align:right">Site Adresi :</label>
+        <div class="col-md-5">
+            <input asp-for="SiteUrl" type="text" class="form-control">
+        </div>
+    </div>
+
+    <input type="submit" class="btn btn-info" value="Kaydet" />
+
+</form>
+

@@ -1,0 +1,31 @@
+﻿@model SSS
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h3>Seçili Soru ve cavabı silmek istediğinize emin misiniz?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Soru):
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Soru)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cevap):
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cevap)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Sil" class="btn btn-default" /> |
+        <a asp-controller="SSS" asp-action="List">Listeye geri dön.</a>
+    </form>
+</div>
+

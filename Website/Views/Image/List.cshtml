@@ -1,0 +1,33 @@
+﻿@model IQueryable<Resim>
+@{
+    ViewData["Title"] = "Resimler";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<h3>Resim Galerisi</h3>
+<br />
+
+
+<div class="col-md-12">
+    <div class="row product-list">
+        @foreach (var item in Model)
+        {
+
+            <div class="col-md-4">
+                <section class="panel">
+                    <div class="pro-img-box">
+                        <img src="~/Img/Galeri/@item.ResimYolu" alt="">
+                    </div>
+                    <div class="panel-body text-center">
+                        <h4>@item.Adi</h4>
+                        <h5>@item.ResimYolu</h5>
+                        <a asp-controller="Image" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-large">Sil</a>
+                    </div>
+                </section>
+            </div>
+        }
+    </div>
+</div>
+
+

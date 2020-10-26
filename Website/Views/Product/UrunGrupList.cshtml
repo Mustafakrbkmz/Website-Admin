@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Website.Entity.UrunGrup>
+
+@{
+    ViewData["Title"] = "UrunGrupList";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Urun Grupları</h2>
+
+<button type="button" asp-action="GroupCreate" class="btn btn-primary">Ürün Grup Ekle</button>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Adi)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Aciklama)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Dil)
+                </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Adi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Aciklama)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dil)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Düzenle</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Sil</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

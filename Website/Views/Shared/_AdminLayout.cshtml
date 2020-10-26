@@ -1,0 +1,271 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Mosaddek">
+    <meta name="keyword" content="Baştürk, cam ,sanayi, malatya,imalat,baştürkler">
+    <link rel="shortcut icon" href="~/Img/Galeri/logo.png">
+
+    <title>@ViewBag.Title</title>
+    <!-- <link href="~/FlatLab/css/bootstrap-reset.css" rel="stylesheet" />-->
+    <!-- Bootstrap core CSS -->
+    <link href="~/FlatLab/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/FlatLab/css/bootstrap-reset.css" rel="stylesheet">
+    <!--external css-->
+    <link href="~/FlatLab/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/FlatLab/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen" />
+    <link rel="stylesheet" href="~/FlatLab/css/owl.carousel.css" type="text/css">
+    <!-- Custom styles for this template -->
+    <link href="~/FlatLab/css/style.css" rel="stylesheet">
+    <link href="~/FlatLab/css/style-responsive.css" rel="stylesheet" />
+    @RenderSection("styles", false)
+</head>
+
+<body>
+
+    <section id="container">
+        <!--header start-->
+        <header class="header white-bg">
+            <div class="sidebar-toggle-box">
+                <div data-original-title="Toggle Navigation" data-placement="right" class="icon-reorder tooltips"></div>
+            </div>
+            <!--logo start-->
+            <a href="~/Admin/Index" class="logo"><img src="~/Img/Galeri/logo.png" alt="logo" width="150" /></a>
+
+            <!--logo end-->
+
+            <div class="top-nav ">
+                <!--search & user info start-->
+                <ul class="nav pull-right top-menu">
+                    <li>
+                        <input type="text" class="form-control search" placeholder="Search">
+                    </li>
+                    <!-- user login dropdown start-->
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <img alt="" src="img/avatar1_small.jpg">
+                            <span class="username">Jhon Doue</span>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu extended logout">
+                            <div class="log-arrow-up"></div>
+                            <li><a href="#"><i class=" icon-suitcase"></i>Profile</a></li>
+                            <li><a href="#"><i class="icon-cog"></i> Settings</a></li>
+                            <li><a href="#"><i class="icon-bell-alt"></i> Notification</a></li>
+                            <li><a href="login.html"><i class="icon-key"></i> Log Out</a></li>
+                        </ul>
+                    </li>
+                    <!-- user login dropdown end -->
+                </ul>
+                <!--search & user info end-->
+            </div>
+        </header>
+        <!--header end-->
+        <!--sidebar start-->
+        <aside>
+            <div id="sidebar" class="nav-collapse ">
+                <!-- sidebar menu start-->
+                <ul class="sidebar-menu" id="nav-accordion">
+                    <li>
+                        <a class="active" href="~/Admin/Index">
+                            <i class="icon-dashboard"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="sub-menu">
+                        <a href="javascript:;">
+                            <i class="icon-th"></i>
+                            <span>Ürünler</span>
+                        </a>
+                        <ul class="sub">
+                            <li><a href="~/Product/List">Ürün Listesi</a></li>
+                            <li><a href="~/Product/Create">Ürün Ekle</a></li>
+                            <li><a href="~/Product/GroupList">Ürün Grupları</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="sub-menu">
+                        <a href="javascript:;">
+                            <i class="icon-book"></i>
+                            <span>Bloglar</span>
+                        </a>
+                        <ul class="sub">
+                            <li><a href="~/Blog/List">Blog Listesi</a></li>
+                            <li><a href="~/Blog/Create">Blog Ekle</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="sub-menu">
+                        <a href="javascript:;">
+                            <i class="icon-bookmark"></i>
+                            <span>Yazılar</span>
+                        </a>
+                        <ul class="sub">
+                            <li><a href="~/Article/List">Yazı Listesi</a></li>
+                            <li><a href="~/Article/Create">Yazı Ekle</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:;">
+                            <i class="icon-sitemap"></i>
+                            <span>Kategoriler</span>
+                        </a>
+                        <ul class="sub">
+                            <li><a href="~/Category/List">Kategori Listesi</a></li>
+                            <li><a href="~/Category/Create">Kategori Ekle</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:;">
+                            <i class="icon-picture"></i>
+                            <span>Resimler</span>
+                        </a>
+                        <ul class="sub">
+                            <li><a href="~/Image/List">Resim Listesi</a></li>
+                            <li><a href="~/Image/Create">Resim Ekle</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:;">
+                            <i class="icon-film"></i>
+                            <span>Videolar</span>
+                        </a>
+                        <ul class="sub">
+                            <li><a href="~/Video/List">Video Listesi</a></li>
+                            <li><a href="~/Video/Create">Video Ekle</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:;">
+                            <i class="icon-laptop"></i>
+                            <span>Slider</span>
+                        </a>
+                        <ul class="sub">
+                            <li><a href="~/Slider/List">Slider Listesi</a></li>
+                            <li><a href="~/Slider/Create">Slider Ekle</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:;">
+                            <i class="icon-sitemap"></i>
+                            <span>Etiketler</span>
+                        </a>
+                        <ul class="sub">
+                            <li><a href="~/Ticket/List">Etiket Listesi</a></li>
+                            <li><a href="~/Ticket/Create">Etiket Ekle</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:;">
+                            <i class="icon-cogs"></i>
+                            <span>Ayarlar</span>
+                        </a>
+                        <ul class="sub">
+                            <li><a href="~/Settings/List">Ayar Listesi</a></li>
+                            <li><a href="~/Settings/Create">Ayar Ekle</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:;">
+                            <i class="icon-question"></i>
+                            <span>S.S.S.</span>
+                        </a>
+                        <ul class="sub">
+                            <li><a href="~/SSS/List">SSS Listesi</a></li>
+                            <li><a href="~/SSS/Create">SSS Ekle</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li>
+                        <a href="login.html">
+                            <i class="icon-user"></i>
+                            <span>Login Page</span>
+                        </a>
+                    </li>
+
+
+                </ul>
+                <!-- sidebar menu end-->
+            </div>
+        </aside>
+        <!--sidebar end-->
+        <!--main content start-->
+
+        <section id="main-content">
+            <section class="wrapper">
+                @RenderBody()
+            </section>
+        </section>
+
+        <!--main content end-->
+        <!--footer start-->
+        <!--footer end-->
+    </section>
+
+
+
+
+    <!-- js placed at the end of the document so the pages load faster -->
+    <script src="~/FlatLab/js/jquery.js"></script>
+    <script src="~/FlatLab/js/jquery-1.8.3.min.js"></script>
+    <script src="~/FlatLab/js/bootstrap.min.js"></script>
+    <script class="include" type="text/javascript" src="~/FlatLab/js/jquery.dcjqaccordion.2.7.js"></script>
+    <script src="~/FlatLab/js/jquery.scrollTo.min.js"></script>
+    <script src="~/FlatLab/js/jquery.nicescroll.js" type="text/javascript"></script>
+    <script src="~/FlatLab/js/jquery.sparkline.js" type="text/javascript"></script>
+    <script src="~/FlatLab/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js"></script>
+    <script src="~/FlatLab/js/owl.carousel.js"></script>
+    <script src="~/FlatLab/js/jquery.customSelect.min.js"></script>
+    <script src="~/FlatLab/js/respond.min.js"></script>
+
+    <script class="include" type="text/javascript" src="js/jquery.dcjqaccordion.2.7.js"></script>
+
+    <!--common script for all pages-->
+    <script src="~/FlatLab/js/common-scripts.js"></script>
+
+    <!--script for this page-->
+    <script src="~/FlatLab/js/sparkline-chart.js"></script>
+    <script src="~/FlatLab/js/easy-pie-chart.js"></script>
+    <script src="~/FlatLab/js/count.js"></script>
+    <script src="~/FlatLab/js/jquery.js"></script>
+
+
+
+    <script src="~/FlatLab/js/bootstrap.min.js"></script>
+
+    <script src="~/FlatLab/js/jquery.dcjqaccordion.2.7.js"></script>
+
+
+
+    <script>
+
+        //owl carousel
+
+        $(document).ready(function () {
+            $("#owl-demo").owlCarousel({
+                navigation: true,
+                slideSpeed: 300,
+                paginationSpeed: 400,
+                singleItem: true,
+                autoPlay: true
+
+            });
+        });
+
+        //custom select box
+
+        $(function () {
+            $('select.styled').customSelect();
+        });
+
+    </script>
+    @RenderSection("scripts", false)
+
+</body>
+</html>
+

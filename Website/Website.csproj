@@ -1,0 +1,134 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Grpc.Core" Version="2.31.0" />
+    <PackageReference Include="jQuery.Form" Version="4.2.2" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.9" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.0.3" />
+    <PackageReference Include="Microsoft.Build.Tasks.Core" Version="16.5.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="2.0.2" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="2.0.3" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.4" />
+  <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
+  <PackageReference Include="System.Linq.Expressions" Version="4.3.0" />
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.0"></DotNetCliToolReference>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0"></DotNetCliToolReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Folder Include="Entity\" />
+    <Folder Include="wwwroot\Img\OneCikanGorsel\" />
+    <Folder Include="wwwroot\Files\" />
+    <Folder Include="wwwroot\Files\TeknikCizim\" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <None Include="wwwroot\bootstrap-fileinput\.gitignore" />
+    <None Include="wwwroot\bootstrap-fileinput\.npmignore" />
+    <None Include="wwwroot\bootstrap-fileinput\CHANGE.md" />
+    <None Include="wwwroot\bootstrap-fileinput\css\fileinput-rtl.css" />
+    <None Include="wwwroot\bootstrap-fileinput\css\fileinput-rtl.min.css" />
+    <None Include="wwwroot\bootstrap-fileinput\css\fileinput.css" />
+    <None Include="wwwroot\bootstrap-fileinput\css\fileinput.min.css" />
+    <None Include="wwwroot\bootstrap-fileinput\examples\index.html" />
+    <None Include="wwwroot\bootstrap-fileinput\img\loading-sm.gif" />
+    <None Include="wwwroot\bootstrap-fileinput\img\loading.gif" />
+    <None Include="wwwroot\bootstrap-fileinput\js\fileinput.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\fileinput.min.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\locales\ar.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\locales\az.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\locales\bg.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\locales\ca.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\locales\cr.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\locales\cs.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\locales\da.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\locales\de.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\locales\el.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\locales\es.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\locales\et.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\locales\fa.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\locales\fi.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\locales\fr.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\locales\gl.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\locales\he.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\locales\hu.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\locales\id.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\locales\it.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\locales\ja.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\locales\ka.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\locales\kr.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\locales\kz.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\locales\LANG.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\locales\lt.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\locales\nl.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\locales\no.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\locales\pl.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\locales\pt-BR.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\locales\pt.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\locales\ro.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\locales\ru.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\locales\sk.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\locales\sl.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\locales\sr-latn.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\locales\sv.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\locales\th.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\locales\tr.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\locales\uk.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\locales\uz.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\locales\vi.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\locales\zh-TW.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\locales\zh.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\plugins\piexif.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\plugins\piexif.min.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\plugins\purify.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\plugins\purify.min.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\plugins\sortable.js" />
+    <None Include="wwwroot\bootstrap-fileinput\js\plugins\sortable.min.js" />
+    <None Include="wwwroot\bootstrap-fileinput\LICENSE.md" />
+    <None Include="wwwroot\bootstrap-fileinput\nuget\build.bat" />
+    <None Include="wwwroot\bootstrap-fileinput\nuget\Package.nuspec" />
+    <None Include="wwwroot\bootstrap-fileinput\README.md" />
+    <None Include="wwwroot\bootstrap-fileinput\scss\fileinput-rtl.scss" />
+    <None Include="wwwroot\bootstrap-fileinput\scss\fileinput.scss" />
+    <None Include="wwwroot\bootstrap-fileinput\scss\themes\explorer-fas\theme.scss" />
+    <None Include="wwwroot\bootstrap-fileinput\scss\themes\explorer-fa\theme.scss" />
+    <None Include="wwwroot\bootstrap-fileinput\scss\themes\explorer\theme.scss" />
+    <None Include="wwwroot\bootstrap-fileinput\themes\explorer-fas\theme.css" />
+    <None Include="wwwroot\bootstrap-fileinput\themes\explorer-fas\theme.js" />
+    <None Include="wwwroot\bootstrap-fileinput\themes\explorer-fas\theme.min.css" />
+    <None Include="wwwroot\bootstrap-fileinput\themes\explorer-fas\theme.min.js" />
+    <None Include="wwwroot\bootstrap-fileinput\themes\explorer-fa\theme.css" />
+    <None Include="wwwroot\bootstrap-fileinput\themes\explorer-fa\theme.js" />
+    <None Include="wwwroot\bootstrap-fileinput\themes\explorer-fa\theme.min.css" />
+    <None Include="wwwroot\bootstrap-fileinput\themes\explorer-fa\theme.min.js" />
+    <None Include="wwwroot\bootstrap-fileinput\themes\explorer\theme.css" />
+    <None Include="wwwroot\bootstrap-fileinput\themes\explorer\theme.js" />
+    <None Include="wwwroot\bootstrap-fileinput\themes\explorer\theme.min.css" />
+    <None Include="wwwroot\bootstrap-fileinput\themes\explorer\theme.min.js" />
+    <None Include="wwwroot\bootstrap-fileinput\themes\fas\theme.js" />
+    <None Include="wwwroot\bootstrap-fileinput\themes\fas\theme.min.js" />
+    <None Include="wwwroot\bootstrap-fileinput\themes\fa\theme.js" />
+    <None Include="wwwroot\bootstrap-fileinput\themes\fa\theme.min.js" />
+    <None Include="wwwroot\bootstrap-fileinput\themes\gly\theme.js" />
+    <None Include="wwwroot\bootstrap-fileinput\themes\gly\theme.min.js" />
+  </ItemGroup>
+
+</Project>

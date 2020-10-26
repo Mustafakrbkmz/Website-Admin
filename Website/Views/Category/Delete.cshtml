@@ -1,0 +1,27 @@
+﻿@model Kategori
+@{
+    ViewData["Title"] = "Sil";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+<h3>Seçili kategoriyi silmek istediğinize emin misiniz?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Adi):
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Adi)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Sil" class="btn btn-default" /> |
+        <a asp-controller="Category" asp-action="List">Listeye geri dön.</a>
+    </form>
+</div>
+
